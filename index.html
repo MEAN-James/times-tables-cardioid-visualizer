@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    #app {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      max-width: 100vw;
+      max-height: 100vh;
+    }
+    #overlay {
+      background-image: url("https://symbolsage.com/wp-content/uploads/2020/12/metatron-cube-symbol.jpg?6bfec1&6bfec1");
+      background-size: contain;
+      background-position: center;
+      position: absolute;
+      background-repeat: no-repeat;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      filter: opacity(0%);
+      z-index: 9999;
+      transition-property: all;
+      transition-delay: 1s;
+      transition-duration: 4s;
+      transition-timing-function: ease-in-out;
+    }
+    /* #overlay:hover {
+      filter: opacity(50%);
+      transition-property: all;
+      transition-delay: 1s;
+      transition-duration: 4s;
+      transition-timing-function: ease-in-out;
+    } */
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div id="overlay"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
